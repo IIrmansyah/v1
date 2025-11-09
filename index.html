@@ -1,44 +1,43 @@
-<body style="font-family: Arial,sans-serif;background-color:#f0f0f0 ;">
-
-</body>
-    <b>DATA PENGUNJUNG: </b> <br></b>
-<form method="post" action="data.html">
-    <table>
-        <tr> <td>Nama : </td> <td><input type="text" name="nama" size="20"></td><tr>
-        <tr> <td>Alamat : </td> <td><input type="text" name="alamat" size="20"></td><tr>
-    </table>
-
-</form>
-</body>
-<form method="post">
-        Bacaan yang Anda sukai:<br>
-        <input type="checkbox" name="bacaan" value="novel"> Novel<br>
-        <input type="checkbox" name="bacaan" value="koran"> Koran<br>
-        <input type="checkbox" name="bacaan" value="majalah"> Majalah<br>
-        <input type="checkbox" name="bacaan" value="tabloid"> Tabloid<br><br>
-
-        Apakah Anda setuju dengan kenaikan SPP:<br>
-        <input type="radio" name="opsi" value="ya"> Ya<br>
-        <input type="radio" name="opsi" value="tidak"> Tidak<br>
-        <input type="radio" name="opsi" value="ragu"> Ragu-ragu<br><br>
-
-        Jurusan:<br>
-        <select name="jurusan">
-            <option value="TInf">Teknik Informatika</option>
-            <option value="MI">D3 Manajemen Informatika</option>
-            <option value="TI">Teknik Industri</option>
-        </select><br><br>
-
-        <b style="color: #333;">Komentar:</b><br>
-        <form method="post"> <textarea rows="10" cols="40" style="background-color: khaki;" wrap="physical" name="komentar"></textarea><br>
-        <p></p><button type="submit" style="background-color: rgb(251, 5, 5);">Kirim</button>
-    </form>
-</body>
-<a
-    href="https://www.liputan6.com/feeds/read/5901164/arti-link-pengertian-jenis-dan-manfaatnya-dalam-dunia-digital">Info Lebih Lanjut</a>
-</a></p>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Permintaan Maaf | Dari Hati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root{ --bg:#eef7ff; --text:#ff69b4; --accent:#ff6347 }
+    body{
+      margin:0; min-height:100vh; display:grid; place-content:center;
+      background:linear-gradient(180deg, var(--bg), #fff);
+      font-family:'Tahoma', sans-serif; color:var(--text); text-align:center; padding:24px;
+    }
+    h1{ font-size:44px; margin:0 0 12px }
+    p{ font-size:18px; margin:0 0 16px }
+    .sorry{ font-size:86px; color:var(--accent); animation:wiggle 1s infinite }
+    @keyframes wiggle{
+      0%,100%{ transform:rotate(0) } 25%{ transform:rotate(10deg) } 50%{ transform:rotate(0) } 75%{ transform:rotate(-10deg) }
+    }
+    .btn{
+      border:0; background:var(--text); color:#fff; padding:10px 18px; border-radius:12px; cursor:pointer;
+      box-shadow:0 8px 18px rgba(255,105,180,.25); transition:.25s;
+    }
+    .btn:hover{ transform:translateY(-2px) }
+    small{ color:#a10063 }
+  </style>
 </head>
 <body>
-    <a href="https://www.example.com">Kunjungi Example.com</a>
+  <main>
+    <h1>Maafkan Aku, Sayang…</h1>
+    <p>Aku menyesal. Boleh beri aku kesempatan untuk memperbaiki semuanya?</p>
+    <div class="sorry">😢</div>
+    <button class="btn" id="btnJanji">Aku Janji Berubah</button>
+    <p><small>Janji ini kutulis supaya selalu kuingat.</small></p>
+  </main>
+
+  <script>
+    document.getElementById('btnJanji').addEventListener('click', ()=>{
+      alert('Aku janji lebih sabar, lebih peka, dan lebih mengutamakan kamu. 💖');
+    });
+  </script>
 </body>
 </html>
